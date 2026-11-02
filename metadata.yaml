@@ -1,0 +1,13 @@
+name: dafeiyu_photo
+display_name: 大肥鱼相册
+short_desc: 记住你发的照片，聊到相关话题时主动发出来
+desc: 收到你发的照片会存进她的相册，聊到相关话题时主动把图发出来（有频率限制，不乱发）
+help: 装好后默认关闭。打开 enable；话题命中相册里的图才可能发，不会乱发。命令：/相册 /相册发 <序号> /相册忘了 <序号>
+version: 1.1.0
+author: Caoran1314
+category: AI 增强
+astrbot_version: ">=4.24.0"
+support_platforms:
+  - aiocqhttp
+  - webchat
+repo: https://github.com/Caoran1314/dafeiyu_photo

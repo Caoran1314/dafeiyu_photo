@@ -1,0 +1,48 @@
+{
+  "enable": {
+    "description": "启用相册",
+    "type": "bool",
+    "default": false,
+    "hint": "打开后，她聊天时会挑相册里话题相关的照片主动发出来"
+  },
+  "prob": {
+    "description": "命中话题后发图的概率",
+    "type": "float",
+    "default": 0.65,
+    "hint": "0~1。话题匹配上了也只是一定概率发，显得自然"
+  },
+  "min_score": {
+    "description": "话题匹配门槛",
+    "type": "int",
+    "default": 2,
+    "hint": "命中多少个共同词才考虑发图。越大越保守（宁可不发）"
+  },
+  "max_per_day": {
+    "description": "每天最多发几张",
+    "type": "int",
+    "default": 2
+  },
+  "cooldown_days": {
+    "description": "同一张图多少天内不重复",
+    "type": "int",
+    "default": 7
+  },
+  "ingest": {
+    "description": "是否记住你发来的照片",
+    "type": "bool",
+    "default": true,
+    "hint": "打开后，你发给她的图片会自动存进她的相册并记下当时的聊天关键词"
+  },
+  "seed": {
+    "description": "预置照片（JSON 数组）",
+    "type": "text",
+    "default": "[]",
+    "hint": "例如 [{\"file\":\"某张图.jpg\",\"tags\":[\"大盘鸡\",\"拌面\",\"吃\"]}]，file 可写 /AstrBot/data/attachments 里的文件名"
+  },
+  "scopes": {
+    "description": "允许生效的会话（留空=全部）",
+    "type": "text",
+    "default": "",
+    "hint": "填 unified_msg_origin，多个用逗号分隔"
+  }
+}
